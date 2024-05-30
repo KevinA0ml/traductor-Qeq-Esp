@@ -1,0 +1,272 @@
+/*===============Propiedades Globales================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-color: #151d49f8;
+    align-items: center;
+}
+
+
+/*===================MENU==========================*/
+#menu{
+    position: relative;
+    background-color: #274183;
+    display: flex;
+    justify-content: space-between; /* Coloca los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px 20px; /* Ajusta el relleno para espaciar los elementos */
+}
+ #menu a, button{
+    margin-left: 150px;
+     font-size: 18px !important;
+     font-weight: 600;
+     position: relative;
+     z-index: 1;
+     color:#f3f3f3;
+ }
+
+ #logo {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 180px; /* Ajusta el ancho máximo según sea necesario */
+    max-height: 160px; /* Ajusta la altura máxima según sea necesario */
+   
+ }
+
+
+
+
+#menu a:hover{
+    color:rgb(9, 15, 61);
+    background-color: #5C89FA;
+}
+
+/*===================SLIDER DE IMAGENES==========================*/
+
+.carousel-inner {
+    max-height:39rem !important;
+}
+
+
+/*===================FAQS   QEQCHI==========================*/
+#introfaqs{
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1); /* Crear un efecto de sombra difuminada en la parte superior */
+
+
+    margin-top: 200px;
+    background-color: #d8d8d8d5;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#faqs {
+    background-color: #f3f3f3;
+}
+
+/*===================SECCION NUESTRO TRADUCTOR==========================*/
+#traductor{
+    background-color: #d8d8d8d5;
+    margin-top: 150px;
+}
+#traductor .h2{
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+#local {
+    padding-top: 50px;
+    padding-bottom: 150px;
+    background-color: #f3f3f3;
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Ajusta el tamaño y otros estilos según sea necesario */
+}
+
+.button-container button {
+    width: 150px;
+    height:80px;
+    color: black;
+    /* Ajusta el tamaño y otros estilos específicos para el botón */
+}
+
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Ajusta el tamaño y otros estilos según sea necesario */
+}
+
+.input-container input {
+    width: 700px; /* Ajusta el ancho según sea necesario */
+    height: 150px;
+    /* Otros estilos específicos para los inputs dentro de este contenedor */
+}
+
+.label-container {
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    margin-bottom: 10px; /* Espacio entre el contenedor y los elementos */
+}
+select {
+    width: 400px; /* Ancho deseado */
+    margin-right: 20px;   
+    border-radius: 10px;
+    border: 1px solid #353333;
+}
+.select-container {
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px; /* Espacio entre el contenedor y los elementos */
+}
+#recentSearchesListBox{
+    width: 700px;
+}
+
+.styled-button {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #333333;
+  font-size: 18px;
+  border-radius: 0px;
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+  border: 2px solid #333333;
+  transition: 0.3s;
+  box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
+  background-color: #b2e2ea;
+  }
+
+  .styled-button:hover {
+    box-shadow: 0 0 #333;
+    color: #fff;
+    background-color: #1b2a4e;
+  }
+
+/*=========================fuentes de texto================================*/
+
+.freeman-regular {
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*=========================Creadores BACKGROUND================================*/
+
+#bg-creador{
+    position:relative;
+    top: -130px;
+} 
+
+ #seccion-creador{
+    background-color: #1b2a4e;
+    min-height:500px;
+    position:relative;
+}
+
+/*=========================FOOTER================================*/
+
+footer {
+    background: #1b2a4e;
+    min-height: 100px;;
+}
+footer p{
+    color:#f3f3f3;
+    text-align:center;
+}
+#iconos  i {
+    font-size: 26px;
+    padding: 0 8px;
+    color:#f3f3f3;
+}
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px){
+    #intro, #equipo {
+        width:90% !important;
+        margin:auto;
+    }
+  
+    #local {
+        flex-wrap: wrap;
+        padding-top:30px;
+   }
+   .wrapper-local {
+    width:90%;
+    margin:auto;
+    padding-top:50px;    
+   }
+ 
+}
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+
+@media (max-width:768px) {
+
+    #intro, #equipo{
+        width:90% !important;
+        margin:auto;
+    }
+
+    
+    #img-equipo{
+        max-height:20rem !important;
+        width:90%;
+    }
+    .wrapper-local {
+        width:90%;
+        margin:auto;
+        padding-top:50px;    
+    }
+    #local {
+        flex-wrap: wrap;
+    }
+    .mapa img {
+        width:100%;
+        height:auto;
+    }
+    #bg-contactos{
+        top: -120px;
+    }
+
+
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width:100% !important;
+    }
+    #servicios-fila-1 {
+        width:100% !important;
+    }
+
+    .icono-wrap{
+        flex-wrap:wrap !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+}
